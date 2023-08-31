@@ -1,31 +1,63 @@
 #splashpicture {
-    background-color:gray;
+    background-color:#145418;
     position:absolute;
     height:98%;
     width:99%;
     z-index:-1;
 }
 
-#tabs {
+#circle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    font-size:200%;
+}
+
+.normalTabs {
     width:100%;
     height:10%;
-    top:80%;
+    top:85%;
     position:absolute;
 }
 
+.scrolledTabs {
+    position: fixed;
+    background-color:#145418;
+    color:white;
+    top: 0;
+    z-index:1000;
+    width:100%;
+}
 #tabs > ul {
     list-style-type:none;
 }
 
-#tabs > ul > li {
+#tabs > ul > li { 
+    margin-left:15%;
+    display:inline-block;
+}
+
+.tab {
     float:left;
-    padding-left:10%;
+    color:white;
+    cursor:pointer;
+    font-size:120%;
 }
 
 #content {
     position:absolute;
     top:100%;
     padding:10%;
+    height:100%;
+}
+
+.content {
+    display:none;
+}
+
+.focusContent {
+    display:inline-block
 }
 
 #important {
@@ -33,3 +65,9 @@
    text-align:center;
    padding-top:10%;
 }
+
+.focused {
+    border-bottom:2px solid white;
+    padding-bottom:2px;
+}
+
