@@ -94,9 +94,41 @@ body {
     justify-content:center;
     align-items:center;
     font-family:'dreamland';
-   /* background-color:#214D27;
-    new-background:#214827 */
     background-image:linear-gradient(to bottom, #214D27, #214827);
+    flex-direction:column;
+    overflow:hidden;
+}
+
+#namesPic {
+    width:15em;
+    margin-top:-5vh;
+}
+
+#important p {
+    margin:0;
+}
+
+#sealsPic {
+    width:80%;
+    position:absolute;
+    left:53%;
+    top:90%;
+    rotate:90deg;
+    opacity:50%;
+}
+
+@media (max-width: 800px) {
+    #namesPic {
+        width:95%;
+        margin-top:-10vh;
+    }
+    #sealsPic {
+        width:130%;
+        left:-10%;
+        top:85%;
+        rotate:0deg;;
+        opacity:50%;
+    }
 }
 
 .focused {
