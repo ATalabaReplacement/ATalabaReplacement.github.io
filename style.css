@@ -83,7 +83,6 @@ body {
 #important {
     font-size:6vh;
     text-align:center;
-    background-color:#145418;
     position:absolute;
     top:1vh;
     bottom:1vh;
@@ -95,6 +94,9 @@ body {
     justify-content:center;
     align-items:center;
     font-family:'dreamland';
+   /* background-color:#214D27;
+    new-background:#214827 */
+    background-image:linear-gradient(to bottom, #214D27, #214827);
 }
 
 .focused {
