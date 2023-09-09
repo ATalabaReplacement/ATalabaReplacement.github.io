@@ -9,7 +9,8 @@
 #circle {
     position:absolute;
     top:50%;
-    left:50%;
+    width:100%;
+    text-align:center;
     color:white;
     font-size:200%;
 }
@@ -31,11 +32,13 @@
 }
 #tabs > ul {
     list-style-type:none;
+    padding:0;
 }
 
 #tabs > ul > li { 
-    margin-left:15%;
-    display:inline-block;
+    width:24%;
+    display:inline-flex;
+    text-align:center;
 }
 
 .tab {
@@ -43,13 +46,15 @@
     color:white;
     cursor:pointer;
     font-size:120%;
+    margin:0 auto;
 }
 
 #content {
     position:absolute;
     top:100%;
-    padding:10%;
-    height:100%;
+    padding:5%;
+    height:70%;
+    width:90%;
 }
 
 .content {
@@ -60,10 +65,36 @@
     display:inline-block
 }
 
+@font-face {
+    font-family:'dreamland';
+    src: URL('dreamland.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'yaquote';
+    src: URL('yaquote.ttf') format('truetype');
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
 #important {
-   font-size:3em;
-   text-align:center;
-   padding-top:10%;
+    font-size:6vh;
+    text-align:center;
+    background-color:#145418;
+    position:absolute;
+    top:1vh;
+    bottom:1vh;
+    left:1vh;
+    right:1vh;
+    z-index:-1;
+    color:white;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'dreamland';
 }
 
 .focused {
@@ -71,3 +102,13 @@
     padding-bottom:2px;
 }
 
+
+#homeContent {
+    text-align:center;
+    width:100%;
+}
+
+#rsvpContent {
+    text-align:center;
+    width:100%;
+}
