@@ -1,9 +1,12 @@
 $(document).ready(function() {
     let elevation = $("#tabs").offset().top;
     $(document).scroll(function () {
-        var $nav = $("#tabs");
-        $nav.toggleClass('scrolledTabs', $(this).scrollTop() > elevation);
-        $nav.toggleClass('normalTabs', $(this).scrollTop() <= elevation);
+        var nav = $("#tabs");
+        if (nav.hasClass('normalTabs')) {
+            elevation = nav.offset().top;
+        }
+        nav.toggleClass('scrolledTabs', $(this).scrollTop() > elevation);
+        nav.toggleClass('normalTabs', $(this).scrollTop() <= elevation);
     });
 
     $(".tab").click(function() {
