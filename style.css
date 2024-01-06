@@ -104,6 +104,14 @@ body {
     margin-top:-5vh;
 }
 
+#labelBackground {
+    width: 60%;
+}
+
+#dateBackground {
+    width: 20%;
+}
+
 #important p {
     margin:0;
 }
@@ -129,6 +137,15 @@ body {
         rotate:0deg;;
         opacity:50%;
     }
+
+    #labelBackground {
+        width: 90%;
+    }
+
+    #dateBackground {
+        width: 40%;
+    }
+
 }
 
 .focused {
