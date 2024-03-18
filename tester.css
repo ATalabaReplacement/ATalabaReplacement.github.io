@@ -229,24 +229,30 @@ body {
 }
 
 @media (max-width: 800px) {
-    #namesPic {
-        width:95%;
-        margin-top:-10vh;
-    }
-    #sealsPic {
-        width:130%;
-        left:-10%;
-        top:85%;
-        rotate:0deg;;
-        opacity:50%;
+    #splashpicture {
+        background-size: cover;
     }
 
-    #labelBackground {
-        width: 90%;
+    #black-circle {
+        width:700px;
+        height:700px;
+        bottom:50px;
+        left:-350px;
     }
 
-    #dateBackground {
-        width: 40%;
+    #black-rectangle {
+        width:350px;
+        height:400px;
+        left:0;
+        bottom:0;
+    }
+
+    #black-circle-text {
+        font-size:3em;
+        position:absolute;
+        left:400px;
+        top:300px;
+        z-index:2;
     }
 
     .hide-mobile {
@@ -256,6 +262,11 @@ body {
     .home-pic {
         max-width:80%;
     }
+    
+    .tab {
+        font-size:0.8em;
+    }
+
 }
 
 
