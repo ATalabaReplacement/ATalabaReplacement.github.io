@@ -1,5 +1,6 @@
 #splashpicture {
     background-image:url("wedding-tile-bg.png");
+    background-size:100% 100%;
     position:absolute;
     height:100%;
     width:100%;
@@ -58,15 +59,17 @@
 }
 
 .normalTabs {
+    background-color:rgb(193, 134, 24);
     width:100%;
-    height:10%;
+    height:8%;
     top:100%;
     position:absolute;
+    z-index:1000;
 }
 
 .scrolledTabs {
     position: fixed;
-    background-color:#145418;
+    background-color:rgb(193, 134, 24);
     color:black;
     top: 0;
     z-index:1000;
