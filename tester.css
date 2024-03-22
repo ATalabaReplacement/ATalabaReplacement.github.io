@@ -236,13 +236,13 @@ body {
     #black-circle {
         width:700px;
         height:700px;
-        bottom:50px;
+        bottom:-150px;
         left:-350px;
     }
 
     #black-rectangle {
         width:350px;
-        height:400px;
+        height:200px;
         left:0;
         bottom:0;
     }
