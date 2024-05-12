@@ -143,7 +143,7 @@
     width:100%;
 }
 
-#home-text-spot {
+.sub-pic-text-spot {
     position:absolute;
     top:50%;
     height:50%;
@@ -289,6 +289,12 @@ body {
 #travelContent {
     text-align:center;
     width:100%;
+}
+
+#travelContent .sub-pic-text-spot {
+    padding-left:5%;
+    padding-right:5%;
+    width:90%;
 }
 
 .lowercase {
