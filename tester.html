@@ -19,7 +19,7 @@
             <li id="homeTab" class="tab focused">DETAILS</li>
             <li id="travelTab" class="tab">TRAVEL</li>
             <li id="rsvpTab" class="tab">RSVP</li>
-            <li id="storyTab" class="tab">ABOUT US</li>
+            <!--<li id="storyTab" class="tab">ABOUT US</li>-->
             <li id="faqTab" class="tab">FAQ</li>
     </div>
     <div id='content'>
@@ -38,23 +38,42 @@
             </div>
         </div>
         <div id="travelContent" class='content'>
-            RSVP here:
+            <div id="home-pic-spot">
+                <img class="home-pic" src="box-house-hotel.webp">
+                <img class="home-pic hide-mobile" src="location-on-map.png">
+            </div>
+            <div id="home-text-spot">
+                <h1>Travel & Stay</h1>
+                <h3 class='lowercase'>Our ceremony and reception will be held at the <a href='https://theboxhousehotel.com/' target='_blank'>Box House Hotel</a> in Brooklyn, New York</h3>
+                <h3 class='lowercase'>Airports, Public Transit</h3>
+            </div>
         </div>
         <div id="rsvpContent" class='content'>
-            RSVP here:
+            <div id="rsvpIndented">
+                <a href="https://forms.gle/LqeucK7jT5WZ7fYS7" target="_blank" id='rsvpButton'>
+                    <h1 id='rsvpHeader'>RSVP</h1>
+                </a>
+                <h3>We're so excited to see you on our big day! Please let us know if you can make it by May 31, 2024, by filling out our RSVP form.</h3>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5TEW-yfH1_PY95j4vntm9LOU3pTvgPQOGh9OlzyKkTSdGCQ/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </div>
-        <div id="storyContent" class='content'>
+        <!--<div id="storyContent" class='content'>
             <h2>The meeting</h2>
             <p>Erika and Andrei met at Robert's house. Robert is not invited to this wedding.</p>
             <h2>Dating</h2>
             <p>Erika and Andrei met at Robert's house. Robert is not invited to this wedding.</p>
             <h2>Proposal</h2>
             <p>After months of figuring out how it would work, Andrei finally proposed in Gramercy Park.</p>
-        </div>
+        </div>-->
         <div id="faqContent" class='content'>
-            <h1>FAQ</h1>
-            <h3>HOTELS: Need assistance booking or finding a hotel? Please let us know. Our recommendations in the area are the Box House Hotel (most convenient) or the Renaissance Long Island City (Description).</h3>
-
+            <h1 class="top-ten" id='faqHeader'>FAQ</h1>
+            <div id='afaqContent'>
+                <h3>HOTELS: Need assistance booking or finding a hotel? Please let us know. Our recommendations in the area are the Box House Hotel (most convenient) or the Renaissance Long Island City (Description).</h3>
+                <br>
+                <h3>ATTIRE: Guests are encouraged to wear summery cocktail attire. We're excited to dress up but want all our guests to feel comfortable, nothing that it'll be NYC in late August - hot and humid!</h3>
+                <br>
+                <h3>GIFTS: Thank you for being a big part of our special day! Your presence is the biggest gift of all but if you feel inclined to give us a wedding gift, it would mean the world to us if you contributed to our honeymoon fund. </h3>
+            </div>
         </div>
     </div>
     <script src='jquery-min.js'></script>

@@ -267,6 +267,17 @@ body {
         font-size:0.8em;
     }
 
+    #rsvpIndented iframe {
+        display: none;
+    }
+
+    #rsvpIndented a {
+        display: block !important;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+
 }
 
 
@@ -275,7 +286,65 @@ body {
     width:100%;
 }
 
-#rsvpContent {
+#travelContent {
     text-align:center;
     width:100%;
+}
+
+.lowercase {
+    font-family:'Perpetua', sans-serif;
+}
+
+#rsvpButton {
+    margin-top:20%;
+    padding: 0 5% 0 5%;
+    background-color:rgb(192, 134, 24);
+    display:inline-block;
+    text-decoration:none;
+}
+
+#rsvpIndented {
+    padding-top:10%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+#rsvpIndented a {
+    display: none;
+}
+
+#rsvpIndented a:link {
+    color: white;
+}
+
+#rsvpIndented a:visited {
+    color: white;
+}
+
+#rsvpContent {
+    color:rgb(193, 134, 24);
+    padding:20%;
+    padding-top:0%;
+    padding-bottom:0%;
+    font-size:1.2em;
+    line-height:2em;
+}
+
+.top-ten {
+    padding-top:10%;
+}
+
+#faqHeader {
+    display:flex;
+    justify-content:center;
+    color:rgb(193, 134, 24);
+}
+
+#faqContent {
+    color:rgb(193, 134, 24);
+    padding:10%;
+    padding-top:0%;
+    font-size:1.2em;
+    line-height:2em;
 }
