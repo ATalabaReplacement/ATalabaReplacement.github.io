@@ -399,6 +399,18 @@ body {
     font-family:'subway-monospaced';
 }
 
+#storyContent {
+    width:100%;
+}
+
+#storyHeader {
+    display:flex;
+    justify-content:center;
+    color:var(--header-color);
+    font-family:'subway-monospaced';
+    padding-top:8%;
+}
+
 #faqContent {
     padding:10%;
     padding-top:0%;
