@@ -252,9 +252,15 @@ body {
     opacity:50%;
 }
 
+@media (max-width: 400px) {
+    #shrinkHome {
+        font-size:1.5em;
+    }
+}
+
 @media (max-width: 800px) {
     #shrinkHome {
-        font-size:1.6em;
+        font-size:1.8em;
     }
 
     #splashpicture {
