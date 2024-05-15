@@ -69,7 +69,7 @@
 }
 
 :root {
-    --dark-gold:#d79922;
+    --dark-gold:#C06014;
     --header-color:#C06014;
 }
 
@@ -159,7 +159,10 @@
     height:50%;
     width:100%;
     color:var(--header-color);
-    font-family:'Perpetua Titling MT', sans-serif;
+}
+
+.sub-pic-text-spot h1 {
+    font-family:'subway-monospaced';
 }
 
 #content {
@@ -168,6 +171,7 @@
     height:100%;
     width:100%;
     background-image:linear-gradient(#f5f5dc, white);
+    font-family:'subway-medium', sans-serif;
 }
 
 .content {
@@ -181,6 +185,16 @@
 @font-face {
     font-family:'dreamland';
     src: URL('dreamland.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'subway-medium';
+    src: URL('NYCSubwayFont-Medium_NONCOMMERCIAL.otf') format('opentype');
+}
+
+@font-face {
+    font-family:'subway-monospaced';
+    src: URL('NYCSubwayFont-Monospaced_NONCOMMERCIAL.otf') format('opentype');
 }
 
 @font-face {
@@ -239,6 +253,10 @@ body {
 }
 
 @media (max-width: 800px) {
+    #shrinkHome {
+        font-size:1.8em;
+    }
+
     #splashpicture {
         background-size: cover;
     }
@@ -294,6 +312,18 @@ body {
 #homeContent {
     text-align:center;
     width:100%;
+}
+
+.monospace {
+
+    font-family:'subway-monospaced';
+}
+
+#homeFooter {
+    position:absolute;
+    width:100%;
+    top:80%;
+    height:10%;
 }
 
 #travelContent {
@@ -355,6 +385,18 @@ body {
     display:flex;
     justify-content:center;
     color:var(--header-color);
+    font-family:'subway-monospaced';
+}
+
+#rsvpHeader {
+    display:flex;
+    justify-content:center;
+    color:var(--header-color);
+    font-family:'subway-monospaced';
+}
+
+.monospaced {
+    font-family:'subway-monospaced';
 }
 
 #faqContent {
