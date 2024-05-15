@@ -19,18 +19,18 @@
             <li id="homeTab" class="tab focused">DETAILS</li>
             <li id="travelTab" class="tab">TRAVEL</li>
             <li id="rsvpTab" class="tab">RSVP</li>
-            <!--<li id="storyTab" class="tab">ABOUT</li>-->
+            <li id="storyTab" class="tab">ABOUT</li>
             <li id="faqTab" class="tab">FAQ</li>
     </div>
     <div id='content'>
         <div id="homeContent" class="focusContent content">
-            <div id="home-pic-spot">
+            <div class="home-pic-spot">
                 <img class="home-pic" src="dance.jpg">
                 <img class="home-pic hide-mobile" src="handhold-bw.jpg">
                 <img class="home-pic hide-mobile" src="kodak.jpg">
             </div>
             <div class="sub-pic-text-spot">
-                <h1 id='shrinkHome'>PLEASE_JOIN_US</h2>
+                <h1 class='monospace' id='shrinkHome'>PLEASE_JOIN_US</h2>
                 <h3 class='black'>To Celebrate Our Wedding</h3>
                 <h3 class='black'>FRIDAY, AUGUST 23, 2024</h3>
                 <h3 class='black'>5:00 - 11:00 PM</h3>
@@ -40,40 +40,53 @@
             </div>
         </div>
         <div id="travelContent" class='content'>
-            <div id="home-pic-spot">
+            <div class="home-pic-spot">
                 <img class="home-pic" src="box-house-hotel.webp">
                 <img class="home-pic hide-mobile" src="location-on-map.png">
             </div>
             <div class="sub-pic-text-spot">
-                <h1>TRAVEL</h1>
-                <h3 class='black'>Our ceremony and reception will be held at the <a href='https://theboxhousehotel.com/' target='_blank'>Box House Hotel</a> in Brooklyn, New York</h3>
-                <p class='black'>The Box House is easily accessible (by car) from either John F. Kennedy International Airport or LaGuardia Airport. Please note that the hotel is a 10-minute walk to the Vernon-Jackson MTA stop on the 7 train (which is only one station away from Grand Central Terminal in Manhattan). The Greenpoint Avenue G train is located only 7 blocks from the hotel.  </p>
-                <p class='black'>The Box House Hotel does not offer parking, however they are located in a residential neighborhood, in which there is free street parking. We do advise all guests to be cautious of alternate street parking. There are a couple parking garages within a ten minute walk of the hotel.
+                <div class='centered'>
+                    <h1 class='monospace'>TRAVEL</h1>
+                    <h3 class='black'>Our ceremony and reception will be held at the <a href='https://theboxhousehotel.com/' target='_blank'>Box House Hotel</a> in Brooklyn, New York
+                    </h3>
+                </div>
+                <p class='black helvetica'>The Box House is easily accessible (by car) from either John F. Kennedy International Airport or LaGuardia Airport. Please note that the hotel is a 10-minute walk to the Vernon-Jackson MTA stop on the 7 train (which is only one station away from Grand Central Terminal in Manhattan). The Greenpoint Avenue G train is located only 7 blocks from the hotel.  </p>
+                <p class='black helvetica'>The Box House Hotel does not offer parking, however they are located in a residential neighborhood, in which there is free street parking. We do advise all guests to be cautious of alternate street parking. There are a couple parking garages within a ten minute walk of the hotel.
                </p>
             </div>
         </div>
-        <div id="rsvpContent" class='content'>
-            <div id="rsvpIndented">
-                <h1 id='rsvpHeader'>RSVP</h1>
-                <h3 class='black'>We're so excited to see you on our big day! Please let us know if you can make it by June 23, 2024, by filling out our RSVP form.</h3>
+        <div id="rsvpContent" class='content contentPage'>
+            <div id='rsvpFlex'>
+                <h1 class='top-eight contentHeader' id='rsvpHeader'>RSVP</h1>
+                <h3 class='black'>We're so excited to see you on our big day!</h3>
+                <h3>Please fill out our RSVP form by June 23, 2024</h3>
                 <a href="https://forms.gle/LqeucK7jT5WZ7fYS7" target="_blank" id='rsvpButton'>
                     <h1 >RSVP</h1>
                 </a>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5TEW-yfH1_PY95j4vntm9LOU3pTvgPQOGh9OlzyKkTSdGCQ/viewform?embedded=true" width="640" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
-        <!--
-        <div id="storyContent" class='content'>
-            <h1 class='monospaced' id='storyHeader'>BRIDAL_PARTY</h1>
-            <p>Thank you to our bridesmaids and groomsmen.
-        </div> -->
-        <div id="faqContent" class='content'>
-            <h1 class="top-ten" id='faqHeader'>FAQ</h1>
-            <h3 class='black'><span class='monospaced'>HOTELS</span>: Need assistance booking or finding a hotel? Please let us know. Our recommendations in the area are the Box House Hotel (most convenient) or the Renaissance Long Island City.</h3>
+        <div id="storyContent" class='content contentPage'>
+            <h1 class='top-eight contentHeader'>ABOUT</h1>
+            <p class='monospaced'>ERIKA_+_ANDREI</p>
+            <p class='helvetica'>Erika and Andrei met in college. After years of late night Collegetown Bagels dinners, shopping at Target, and making their friends feel like third wheels, Andrei finally asked Erika out the day after his 20th birthday, a few weeks after they had signed an 8 person housing lease.</p>
+            <p class='helvetica'>Thankfully, despite their friends' initial fears, they didn't break up during their last few years of college. Their relationship kept going through long distance internships, straight-out-of-college moving struggles, and over a year of quarantining in a one-bedroom apartment. Until one day, Andrei managed to snag a key to Gramercy Park, and asked Erika to marry him on a cold Winter's day.</p>
+            <div id='storyPicHolder'><img src='DSC01214-A.jpg'/></div>
+            <p class='monospaced'>WEDDING_PARTY</p>
+            <p class='helvetica'>Thank you to our wedding party, without whom the wedding planning would've been a lot harder and a lot less fun:</p>
+            <p class='helvetica'><b>Bridesmaids</b>: Natalie Tietjen (Maid of Honor), Iris Cai, Emily DelGreco, Kathryn Haldeman, Nicole Palazzo, Julie Servidio</p>
+            <p class='helvetica'><b>Groomsmen</b>: Alberto Ionescu (Best Man), James Bessoir, Christopher Burke, Stephanie Yan, Hao Daniel Zhang</p>
+            <p class='monospaced'>ACKNOWLEDGEMENTS</p>
+            <p class='helvetica'>Thank you to our parents (and Ken!) for being there for us every step of the way.<p>
+            <p class='helvetica'>And thank you to the rest of our family for supporting us throughout the whole process and traveling to come see the happiest day of our lives.</p>
+        </div>
+        <div id="faqContent" class='content contentPage'>
+            <h1 class="top-eight contentHeader">FAQ</h1>
+            <p class='black helvetica'><span class='monospaced'>HOTELS</span>: Need assistance booking or finding a hotel? Please let us know. Our recommendations in the area are the Box House Hotel (most convenient) or the Renaissance Long Island City.</p>
             <br>
-            <h3 class='black'><span class='monospaced'>ATTIRE</span>: Guests are encouraged to wear summery cocktail or formal attire. We're excited to dress up but want all our guests to feel comfortable, nothing that it'll be NYC in late August - hot and humid!</h3>
+            <p class='black helvetica'><span class='monospaced'>ATTIRE</span>: Guests are encouraged to wear summery cocktail or formal attire. We're excited to dress up but want all our guests to feel comfortable, nothing that it'll be NYC in late August - hot and humid!</p>
             <br>
-            <h3 class='black'><span class='monospaced'>GIFTS</span>: Thank you for being a big part of our special day! Your presence is the biggest gift of all but if you feel inclined to give us a wedding gift, it would mean the world to us if you contributed to <a href="https://withjoy.com/andrei-and-erika/registry" target="_blank">our honeymoon fund</a>. </h3>
+            <p class='black helvetica'><span class='monospaced'>GIFTS</span>: Thank you for being a big part of our special day! Your presence is the biggest gift of all but if you feel inclined to give us a wedding gift, it would mean the world to us if you contributed to <a href="https://withjoy.com/andrei-and-erika/registry" target="_blank">our honeymoon fund</a>. </p>
         </div>
     </div>
     <script src='jquery-min.js'></script>
