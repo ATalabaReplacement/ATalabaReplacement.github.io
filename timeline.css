@@ -1,3 +1,13 @@
+@font-face {
+    font-family:'subway-medium';
+    src: URL('NYCSubwayFont-Medium_NONCOMMERCIAL.otf') format('opentype');
+}
+
+@font-face {
+    font-family:'subway-monospaced';
+    src: URL('NYCSubwayFont-Monospaced_NONCOMMERCIAL.otf') format('opentype');
+}
+
 #splashpicture {
     background-image:url("wedding-tile-bg.png");
     background-size:100% 100%;
@@ -40,10 +50,11 @@
 }
 
 #timeline-header {
-    font-family:'Perpetua Titling MT', sans-serif;
-    font-size:6em;
+    font-family:'subway-monospaced', sans-serif;
+    font-size:5.5em;
     text-align:center;
     margin-top:5%;
+    margin-bottom:5%;
 }
 
 #timeline-day {
@@ -77,6 +88,10 @@
     flex: 5;
 }
 
+.row-data a {
+    color:#33DAFF;
+}
+
 .row-data h4 {
     margin: 0
 }
@@ -99,21 +114,6 @@
 }
 
 @font-face {
-    font-family:'dreamland';
-    src: URL('dreamland.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:'subway-medium';
-    src: URL('NYCSubwayFont-Medium_NONCOMMERCIAL.otf') format('opentype');
-}
-
-@font-face {
-    font-family:'subway-monospaced';
-    src: URL('NYCSubwayFont-Monospaced_NONCOMMERCIAL.otf') format('opentype');
-}
-
-@font-face {
     font-family:'yaquote';
     src: URL('yaquote.ttf') format('truetype');
 }
@@ -131,6 +131,7 @@ body {
     #timeline-header {
         font-size:3em;
         margin-top:10%;
+        margin-bottom:5%;
     }
 
     #timeline-day {
